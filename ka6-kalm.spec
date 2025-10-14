@@ -16,19 +16,23 @@ Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kan
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= %{qtver}
+BuildRequires:	Qt6Quick-devel
+BuildRequires:	Qt6Test-devel
 BuildRequires:	Qt6Widgets-devel
 BuildRequires:	cmake >= 3.20
 BuildRequires:	gettext-tools
+BuildRequires:	libstdc++-devel >= 6:4.8.1
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
 BuildRequires:	kf6-kconfig-devel >= %{kframever}
 BuildRequires:	kf6-kcoreaddons-devel >= %{kframever}
-BuildRequires:	kf6-kdbusaddons-devel >= %{kframever}
+BuildRequires:	kf6-kcrash-devel >= %{kframever}
 BuildRequires:	kf6-ki18n-devel >= %{kframever}
 BuildRequires:	kf6-kirigami-addons-devel >= 1.6.0
 BuildRequires:	kf6-kirigami-devel >= %{kframever}
+BuildRequires:	kf6-qqc2-desktop-style-devel >= %{kframever}
 BuildRequires:	ninja
 BuildRequires:	qt6-build >= %{qtver}
-BuildRequires:	rpmbuild(macros) >= 1.164
+BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires(post,postun):	desktop-file-utils
