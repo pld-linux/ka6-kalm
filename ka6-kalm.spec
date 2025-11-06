@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	6.8
 %define		qtver		6.6
 %define		kaname		kalm
 Summary:	kalm
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	1ef10c52ade4256575426bc00246c19d
+# Source0-md5:	d3d6bfed599146b953e20b513a958128
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= %{qtver}
@@ -21,7 +21,6 @@ BuildRequires:	Qt6Test-devel
 BuildRequires:	Qt6Widgets-devel
 BuildRequires:	cmake >= 3.20
 BuildRequires:	gettext-tools
-BuildRequires:	libstdc++-devel >= 6:4.8.1
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
 BuildRequires:	kf6-kconfig-devel >= %{kframever}
 BuildRequires:	kf6-kcoreaddons-devel >= %{kframever}
@@ -30,6 +29,7 @@ BuildRequires:	kf6-ki18n-devel >= %{kframever}
 BuildRequires:	kf6-kirigami-addons-devel >= 1.6.0
 BuildRequires:	kf6-kirigami-devel >= %{kframever}
 BuildRequires:	kf6-qqc2-desktop-style-devel >= %{kframever}
+BuildRequires:	libstdc++-devel >= 6:4.8.1
 BuildRequires:	ninja
 BuildRequires:	qt6-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.736
